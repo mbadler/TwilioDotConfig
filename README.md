@@ -26,10 +26,10 @@ Here is a minimal config file setup:
 ```
 <configuration>
   <configSections>
-      <section name="TwilioDotNet" type="TwilioDotConfig.TwilioDotConfigSection"/>
+      <section name="TwilioDotConfig" type="TwilioDotConfig.TwilioDotConfigSection"/>
   </configSections>
-    <TwilioDotNet accountSid="accountSid" authToken="authToken" accountResourceSid="accountResourceSid" TwilioBaseURL="https://api.twilio.com/" >
-    </TwilioDotNet>
+    <TwilioDotConfig accountSid="accountSid" authToken="authToken" accountResourceSid="accountResourceSid" TwilioBaseURL="https://api.twilio.com/" >
+    </TwilioDotConfig>
 </configuration>
 ```
 
