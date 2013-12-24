@@ -11,12 +11,14 @@ Using:
 ======
 
 To create a configured Twilio Client you would do:
+```
     var client = new TwilioDotConfig.TwilioDotConfigClient();
-    
+```    
 With the standard Twilio client you would need to specify the account and credientials Every time you create the client
 For exmaple:
+```
     var client = new Twilio.TwilioRestClient("AccountSId", "Authtoken", "AccountResourceSid");
-    
+```    
 
 Setting up the configuration file:
 ----------------------------------
