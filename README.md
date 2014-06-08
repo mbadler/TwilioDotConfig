@@ -1,11 +1,13 @@
 TwilioDotConfig
 ===============
 
+
 Web/App .config able extensions for the Twilio .Net API
 
 Twilio .Confing is a extension to the standard twiliosharp .net object that allows configuration via the web.config/app.config file.
 This makes it esspecially easy to go from dev to production becasue you can leave the config files configured correctly. 
 
+Also the project contiains a setting to allow Real .net exceptions to be thrown if the RestException property is not null
 
 Using:
 ======
@@ -18,6 +20,7 @@ With the standard Twilio client you would need to specify the account and credie
 For exmaple:
 ```
     var client = new Twilio.TwilioRestClient("AccountSId", "Authtoken", "AccountResourceSid");
+    client.ThrowExceptions = true; // if you want real exceptions to be thrown
 ```    
 
 Setting up the configuration file:
