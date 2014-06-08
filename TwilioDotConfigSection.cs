@@ -35,5 +35,21 @@ namespace TwilioDotConfig
             get { return (string)this["TwilioBaseURL"]; }
             set { this["TwilioURL"] = value; }
         }
+
+        [ConfigurationProperty("UseTwilioProductionURL", DefaultValue = "false", IsRequired = false)]
+        public bool UseTwilioProductionURL
+        {
+            get { return (bool)this["UseTwilioProductionURL"]; }
+            set { this["UseTwilioProductionURL"] = value; }
+        }
+
+        [ConfigurationProperty("ThrowExceptions", DefaultValue = "false", IsRequired = false)]
+        public bool ThrowExceptions
+        {
+            get { return (bool)this["ThrowExceptions"]; }
+            set { this["ThrowExceptions"] = value; }
+        }
+
+
     }
 }
